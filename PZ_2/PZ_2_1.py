@@ -10,7 +10,14 @@ distance = int(input("Введите начальное расстояние - "
 time = int(input("Введите время - "))
 
 total_distance = time * (speed_1 + speed_2)
-remaining = abs(distance - total_distance)
+difference = distance - total_distance
+gap = abs(difference)
 
-print(f"В пути {time} ч")
-print(f"Осталось проехать - {remaining} км")
+print(f"Расстояние между автомобилями через {time} ч - {gap} км")
+
+if difference > 0:
+    print("Автомобили ещё не встретились")
+elif difference == 0:
+    print("Автомобили встретились")
+else:
+    print("Автомобили уже проехали друг мимо друга и разъезжаются")
