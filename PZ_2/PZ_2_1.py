@@ -4,13 +4,13 @@
 # начального расстояния и общего пути, проделанного автомобилями; общий путь = время •
 # суммарная скорость.
 
-V1 = int(input("введите скорость 1 автомобиля - "))
-V2 = int(input("ВВедите скорость 2 автомобиля - "))
-S = int(input("Введитие начальное рассотяние - "))
-T = int(input("Введите время - "))
+speed_1 = int(input("Введите скорость 1 автомобиля - "))
+speed_2 = int(input("Введите скорость 2 автомобиля - "))
+distance = int(input("Введите начальное расстояние - "))
+time = int(input("Введите время - "))
 
-sum_dist = T * (V1+V2)
-put = abs(S - sum_dist)
+total_distance = time * (speed_1 + speed_2)
+remaining = abs(distance - total_distance)
 
-print(f"В пути {T}ч")
-print(f"осталось проехать -  {put}км")
+print(f"В пути {time} ч")
+print(f"Осталось проехать - {remaining} км")
