@@ -3,21 +3,25 @@
 # первоначально движутся навстречу друг другу. Данное расстояние равно модулю разности
 # начального расстояния и общего пути, проделанного автомобилями; общий путь = время •
 # суммарная скорость.
-
-speed_1 = int(input("Введите скорость 1 автомобиля - "))
-speed_2 = int(input("Введите скорость 2 автомобиля - "))
-distance = int(input("Введите начальное расстояние - "))
-time = int(input("Введите время - "))
-
-total_distance = time * (speed_1 + speed_2)
-difference = distance - total_distance
-gap = abs(difference)
-
-print(f"Расстояние между автомобилями через {time} ч - {gap} км")
-
-if difference > 0:
-    print("Автомобили ещё не встретились")
-elif difference == 0:
-    print("Автомобили встретились")
-else:
-    print("Автомобили уже проехали друг мимо друга и разъезжаются")
+while True:
+    try:
+        speed_1 = float(input("Введите скорость 1 автомобиля - "))
+        speed_2 = float(input("Введите скорость 2 автомобиля - "))
+        distance = float(input("Введите начальное расстояние - "))
+        time = float(input("Введите время - "))
+    
+        total_distance = time * (speed_1 + speed_2)
+        difference = distance - total_distance
+        gap = abs(difference)
+    
+        print(f"Расстояние между автомобилями через {time} ч - {gap} км")
+    
+        if difference > 0:
+            print("Автомобили ещё не встретились")
+        elif difference == 0:
+            print("Автомобили встретились")
+        else:
+            print("Автомобили уже проехали друг мимо друга и разъезжаются")
+    except Error:
+        print("Ошибка! Введите число.) 
+    
