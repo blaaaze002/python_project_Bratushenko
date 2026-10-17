@@ -22,7 +22,7 @@ while True:
             print("Автомобили встретились")
         else:
             print("Автомобили уже проехали мимо друг друга и разъезжаются")
-    except Error:
+    except ValueError:
         print("Ошибка! Введите число.") 
     print()
     print()
