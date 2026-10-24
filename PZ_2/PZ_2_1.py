@@ -9,21 +9,20 @@ while True:
         speed_2 = float(input("Введите скорость 2 автомобиля - "))
         distance = float(input("Введите начальное расстояние - "))
         time = float(input("Введите время - "))
-    
-        total_distance = time * (speed_1 + speed_2)
-        difference = distance - total_distance
-        gap = abs(difference)
-    
-        print(f"Расстояние между автомобилями через {time} ч - {gap} км")
-    
-        if difference > 0:
-            print("Автомобили ещё не встретились")
-        elif difference == 0:
-            print("Автомобили встретились")
-        else:
-            print("Автомобили уже проехали мимо друг друга и разъезжаются")
+        break
     except ValueError:
         print("Ошибка! Введите число.") 
-    print()
-    print()
+         
+total_distance = time * (speed_1 + speed_2)
+difference = distance - total_distance
+gap = abs(difference)
+    
+print(f"Расстояние между автомобилями через {time} ч - {gap} км")
+    
+if difference > 0:
+    print("Автомобили ещё не встретились")
+elif difference == 0:
+    print("Автомобили встретились")
+else:
+    print("Автомобили уже проехали мимо друг друга и разъезжаются")
     
