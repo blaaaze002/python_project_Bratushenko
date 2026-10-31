@@ -1,8 +1,8 @@
 while True:
     try:
-        number = int(input("Введите трёхзначное число: "))
+        num = int(input("Введите трёхзначное число: "))
 
-        if number < 106 or number > 414:
+        if num < 106 or num > 414:
             print("Неверное число")
             continue
 
@@ -19,8 +19,8 @@ while True:
             14: "туз"
         }
 
-        mast = number // 100
-        card = number % 100
+        mast = num // 100
+        card = num % 100
 
         if mast < 1 or mast > 4 or card < 6 or card > 14:
             print("Такой карты нет")
