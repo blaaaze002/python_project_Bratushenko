@@ -2,7 +2,7 @@ def horizont(length):
     print(symb * length)
 
 
-def vertical(height, width):
+def vertical(height , width):
     for i in range(height):
         print(symb + " " * width + symb)
 

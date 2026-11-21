@@ -14,5 +14,5 @@ for i in range(5):
 
     C, S = DigitCountSum(K)
 
-    print("Количество цифр:", C)
-    print("Сумма цифр:", S)
+    print("Количество цифр:",  C)
+    print("Сумма цифр:",  S)
